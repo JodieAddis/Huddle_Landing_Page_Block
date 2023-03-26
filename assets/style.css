@@ -1,0 +1,338 @@
+/*Importation police d'écriture pour les Titres*/
+@font-face {
+    font-family: Poppins;
+    src: url(./font/Poppins-Medium.ttf);
+}
+/*Importation police d'écriture pour le reste de la page*/
+@font-face {
+    font-family: OpenSans ; 
+    src: url(./font/OpenSans-Regular.ttf);
+}
+/*Application d'une même couleur à tout le corps du site*/
+body{
+    background-color: white;
+    margin: 0  auto;
+}
+/*Ajout d'une image en background de l'header*/
+header{
+    background-image: url(./images/bg-hero-mobile.svg) ;
+    background-color: hsl(193, 100%, 96%, 0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Alignement du logo et du bouton "try.."*/
+.header1{
+    display: flex;
+    justify-content: space-between;
+    place-items: center stretch;
+    padding: 2%;
+}
+/* Design du bouton "try" et du logo du site*/
+.try {
+    font-weight: 700;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    font-family: OpenSans;
+    font-size: 10px;
+    /*text-align: center;*/
+    padding: 6px 30px 6px 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 2px hsl(208, 11%, 55%, 0.4);
+    margin: auto;
+    float: right;
+}
+.try:hover{
+    cursor: pointer;
+}
+.logo{
+    max-width: 40%;
+    position: relative;
+    float: left;
+}
+/*Contenu header*/
+h1{
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Poppins;
+    padding: 90px 35px 5px 35px;
+}
+.headText{
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    font-family: OpenSans;
+    font-weight: 400;
+    padding: 5px 20px 10px 20px;
+}
+.free {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background-color: hsl(322, 100%, 66%);
+    /*border: hsl(322, 100%, 66%) solid 1px;*/
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px 12px 40px;
+    box-shadow: 1px 2px 2px 2px hsl(208, 11%, 55%, 0.6);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.free:hover{
+    background-color: hsl(322, 95%, 75%);
+    cursor: pointer;
+}
+.freeBtn {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px 12px 40px;
+    box-shadow: 1px 2px 2px 2px hsl(208, 11%, 55%, 0.6);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.freeBtn:hover{
+    background-color: hsl(322, 95%, 75%);
+    cursor: pointer;
+}
+.header2 img{
+    padding-top: 45px;
+}
+/*Alignement au centre des images du header et des sections*/ 
+img{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Traitement des sections*/
+.Section{
+    margin-bottom: 80px;
+}
+.section1, .section2, .section3{
+    background-color: white;
+    border:hsl(193, 100%, 96%) solid 1px;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 40px 15px 40px 15px;
+    box-shadow: 1px 4px 4px 2px hsl(208, 11%, 55%, 0.2);
+}
+.Section h2{
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.Section p{
+    color: hsl(208, 11%, 55%);
+    font-size: 14px;
+    text-align: center;
+    font-family: OpenSans;
+}
+.ready{
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    font-family: OpenSans;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 25px 30px 25px;
+    /*max-width: 280px;*/
+    max-width: 80%;
+    /*on deplace le long de l'axe x*/
+    margin: auto;
+    transform: translatey(65px);
+    box-shadow: -2px -7px 4px -2px hsl(208, 11%, 55%, 0.3);
+}
+/*Traitement du footer*/
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    font-family: OpenSans;
+    margin: 0 auto;
+}
+.footContent{
+    display: block;
+    place-items: left auto;
+}
+/*Changement de couleur de logo.svg*/
+.logoFoot{
+    filter: saturate(0) brightness(100);
+    max-width: 45%;
+    padding: 120px 30px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+/*Placement des informations du footer en colonne*/
+.Col1, .Col2, .Col3, .logoFoot{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.Col1 p{
+    text-align: left;
+    font-size: 14px ;
+    float: right; /*alignement des infos à droite */
+    width: 250px;
+}
+.location, .phone, .mail{
+    display: flex;
+    flex-direction: row;
+}
+.location img, .phone img, .mail img{
+    /*Permet de revenir à la taille d'origine des icones*/
+    object-fit: contain;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.location img{
+    transform: translatey(-25px);
+}
+/*Modification de l'apparence des liens*/
+.Col2 a, .Col3 a {
+    color: hsl(193, 100%, 96%);
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+}
+/*Espacement entre les liens*/
+.Col2 a, .Col3 a {
+    padding: 5px 10px 20px 20px;
+}
+.socialNetwork{
+    display: none;
+}
+/*Traitement de bas de page*/
+.Copyright{
+    text-align: center;
+    font-size: 11px;
+}
+.attribution { 
+    font-size: 10px; 
+    text-align: center; 
+    text-decoration: none;
+    margin-bottom: 0px;
+    padding-bottom: 45px;
+}
+.attribution a { 
+    color: hsl(228, 97%, 72%); 
+    text-decoration: none;  }
+.attribution a:hover{ color:hsl(322, 100%, 66%)}
+
+/*Responsive sur pc*/
+@media (min-width:1440px){
+    /*body {
+        background-color: red ; 
+    }*/
+
+    /*Traitement header*/
+    .header2 {
+        flex-direction: column;
+        margin-top: 15px ;
+        margin-bottom: 100px;
+        padding-bottom: 20px;
+    }
+    .headText{
+        text-align: left;
+    }
+    .header2 h1{
+        font-size: 35px;
+    }
+    .header2 p{
+        font-size: 18px;
+    }
+    .headContent h1{
+        max-width: 80%;
+        padding-top: 10%;
+        font-weight: 700;
+    }
+    .freeBtn{
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .headContent{
+        max-width: 30%;
+        float: left;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .header2 img{
+        max-width: 40%;
+    }
+    /*Traitement corps de la page*/
+    .Section{
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Section p, .Section h2 {
+        text-align: left;
+    }
+    .Section p{
+        font-size: 18px;
+    }
+    .Section img{
+        padding: 35px;
+        width: 35%;
+        height: 35%;
+    }
+    .section1, .section3 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .section2{
+        display: flex;
+        flex-direction: row;
+    }
+    .sectContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .ready{
+        max-width: 40%;
+        font-size: 18px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    /*Traitement du footer*/
+    .logoFoot{
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .socialNetwork{
+        filter:invert(1);
+        margin-right: 100px;
+        display: flex;
+        flex-direction: row;
+        max-width: 1.5rem;
+        gap: 1rem;
+        transform: translateY(-40%)
+    }
+    .socialNetwork:hover{
+        cursor: pointer;
+    }
+    .footContent {
+        display: flex;
+        flex-direction: row;
+        /*justify-content: space-around;*/
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .Copyright{
+        text-align: right;
+        padding: 20px 40px 50px 0;
+    }
+    .attribution{
+        padding-bottom: 20px;
+    }
